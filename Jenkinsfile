@@ -32,7 +32,7 @@ pipeline {
                 }
 
                 always {
-                    cleanWs disableDeferredWipeout: true, deleteDirs: true
+                    // cleanWs disableDeferredWipeout: true, deleteDirs: true
                 }
             }
         }

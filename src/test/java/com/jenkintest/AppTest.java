@@ -12,6 +12,6 @@ public class AppTest {
     @Test
     public void testPrint() {
         App app = new App();
-        assertEquals("You typed: Hell", app.checkInput("Hello"));
+        assertEquals("You typed: Hello", app.checkInput("Hello"));
     }
 }

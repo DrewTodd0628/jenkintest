@@ -30,12 +30,9 @@ pipeline {
                 success {
                     archiveArtifacts '**/target/*.jar'
                 }
-            }
-        }
-
-        stage('Cleanup') {
-            steps {
+                cleanup {
                     cleanWs disableDeferredWipeout: true, deleteDirs: true
+                }
             }
         }
     }

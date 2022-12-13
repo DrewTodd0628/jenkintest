@@ -31,9 +31,7 @@ pipeline {
                     archiveArtifacts '**/target/*.jar'
                 }
 
-                always {
-                    // cleanWs disableDeferredWipeout: true, deleteDirs: true
-                }
+
             }
         }
     }

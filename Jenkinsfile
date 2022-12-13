@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                git 'https://github.com/DrewTodd0628/jenkintest.git'
+                // git 'https://github.com/DrewTodd0628/jenkintest.git'
                 bat 'mvnw clean compile'
             }
         }

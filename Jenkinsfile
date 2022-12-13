@@ -17,7 +17,6 @@ pipeline {
             post {
                 always {
                     junit '**/target/surefire-reports/TEST-*.xml'
-                    cleanWs disableDeferredWipeout: true, deleteDirs: true
                 }
             }
         }
@@ -30,6 +29,10 @@ pipeline {
             post {
                 success {
                     archiveArtifacts 'target/*.jar'
+                }
+
+                always {
+                    cleanWs disableDeferredWipeout: true, deleteDirs: true
                 }
             }
         }
